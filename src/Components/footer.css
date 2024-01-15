@@ -1,0 +1,263 @@
+.subscription{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    margin-bottom: 60px;
+}
+.subscription-titles h3{
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.subscription-titles p{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+::placeholder{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.subscriptions-Fields{
+    display: flex;
+    gap:60px;
+    border: 1px solid #444;
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+
+.Email-field{
+    border: none;
+}
+.sub-btn{
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Inter',sans-serif;
+}
+
+.footer-info{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0px 60px;
+    margin-bottom: 60px;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.container-drop{
+    display: flex;
+    justify-content: space-between;
+}
+.downArr{
+    display: none;
+}
+.bigtxt{
+    font-family: 'Inter',sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.lighttxt{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7A7A7A;
+}
+
+.lighttxt a{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7A7A7A;
+}
+.lastcontent{
+
+    margin: 50px;
+
+}
+
+
+.footer-logos{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.leftSide-cred{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.rightSide-cred{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding-right: 60px;
+}
+
+.footerTxt{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:  #2B2B2B;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 1200px) /*and (min-width: 600px)*/ {
+
+    .subscription{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+    }
+    .subscriptions-Fields{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .subscription-titles{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .sub-btn{
+        width: 15%;
+        padding: 10px 25px;
+        justify-content: center;
+        
+    }
+    .downArr{
+        display: block;
+    }
+    .footer-info{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    .row{
+        padding: 30px 0 ;
+        border-bottom: 1px solid #000;
+    }
+    
+    hr{
+        display: none;
+    }
+    .inactive{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .footer-logos{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 35px;
+
+    }
+    .rightSide-cred img{
+        transform: scale(2);
+    }
+    
+    .img-cnt img{
+        transform: scale(0.9);
+    }
+    .leftSide-cred{
+        width: 100%;
+        justify-content: space-between;
+        gap: 50px;
+        margin: 25px 0;
+    }
+    .img-cnt{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+    }
+    .leftSide-cred p{
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 850px){
+        .rightSide-cred img{
+            transform : scale(0.9)
+        }
+         
+    }
+
+    @media only screen and (max-width: 680px){
+        ::placeholder{
+            font-family: 'Inter',sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .sub-btn{
+            font-size: 8px;
+        }
+    }
+
+    @media only screen and (max-width: 500px){
+        .rightSide-cred img{
+            transform : scale(0.78)
+        }
+        .subscriptions-Fields{
+            gap: 20px;
+        }
+        
+    }
+    @media only screen and (max-width: 500px){
+        .rightSide-cred img{
+            transform : scale(0.78)
+        }
+        .subscriptions-Fields{
+            gap: 20px;
+        }
+        .img-cnt img{
+            transform: scale(0.85);
+        }
+    }
+    @media only screen and (max-width: 385px){
+        .rightSide-cred img{
+            transform : scale(0.69)
+        }
+        .leftSide-cred p {
+            font-size: 7px;
+        }
+        .subscriptions-Fields{
+            gap: 15px;
+        }
+        .img-cnt img{
+            transform: scale(0.6);
+        }
+    }
+
+
+}

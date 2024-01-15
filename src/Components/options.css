@@ -1,0 +1,100 @@
+.option-section{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.option-section1{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 1% 0px;
+}
+.option-section2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    margin: 0 100px 80px;
+    justify-items: center
+    
+}
+
+.img-container2{
+    border-radius: 40%;
+    padding-bottom: 40px;
+    background: rgb(240,181,25);
+    background: radial-gradient(circle, rgba(240,181,25,1) 17%, rgba(240,183,31,1) 25%, rgba(255,255,255,1) 70%);
+}
+
+.text-container2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-left: 55px;
+}
+
+.text-container2 h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 67.2px;
+}
+
+.text-container2 p {
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+.card{
+    background-color: #CFFAFE;
+    border: 1.5px solid #CFFAFE;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    max-width: 1440px;
+    width: 100%;
+}
+.text-container-small{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 50px;
+    border-radius: 16px;
+    align-items: flex-start;
+}
+.imgopt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) /*and (min-width: 600px)*/ {
+
+    .option-section1{
+        flex-direction: column;
+        align-items: center;
+        gap:50px;
+    }
+    .text-container2{
+        flex-direction: column;
+        align-items: center;
+        gap:50px;
+    }
+    .shapes-container,.upperdivimg , .img-container2 ,.img-container2 img{
+        width: 100%;
+    }
+    .option-section2{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .imgopt{
+        padding: 20px;
+    }
+}

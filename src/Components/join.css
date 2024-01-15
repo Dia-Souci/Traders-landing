@@ -1,0 +1,87 @@
+.Join-cluster{
+    background-color: #CFFAFE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 90px;
+    padding: 40px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+    text-align: center;
+
+}
+
+
+.desc{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.2px;
+}
+
+#btnDisc{
+    background-color: #fff;
+}
+
+#btnFund{
+    background-color: #F0B519;
+}
+
+
+
+
+@media only screen and (max-width: 750px) /*and (min-width: 600px)*/ {
+    .head{
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 30.1px;
+        padding: 25px  0;
+        margin-left: 20px;
+    }
+    .desc{
+        font-family: 'Inter',sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24.2px;
+    }
+    .btn-grp button{
+        padding: 8px 80px;
+        border: none;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        line-height: 18px;
+        font-weight: 600;
+        font-family: 'Inter',sans-serif;
+    }
+
+    @media only screen and (max-width: 550px){
+        .head{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 23.1px;
+            padding: 25px  0;
+            margin-left: 20px;
+        }
+        .desc{
+            font-family: 'Inter',sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18.2px;
+        }
+        .btn-grp button{
+            padding: 5px 50px;
+            border: none;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            font-size: 8px;
+            line-height: 12px;
+            font-weight: 500;
+            font-family: 'Inter',sans-serif;
+        }
+        
+    }
+}

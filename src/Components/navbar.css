@@ -1,0 +1,141 @@
+
+.navbar-header{
+   display: flex; 
+   flex-direction: row;
+   align-content: center;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1%;
+}
+
+.Main-nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.Main-nav-list li:hover{
+    cursor: pointer;
+}
+
+.nav-button{
+    background-color: #F0B519;
+    padding: 12px 28px 12px 28px;
+    border-radius: 56px;
+    border: none;
+}
+.nav-button:hover{
+    cursor:pointer;
+}
+
+.logo-container{
+    padding-left: 30px;
+}
+
+.HeaderButton-Container{
+    padding-right: 30px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+    top: 2px;
+    right: 0.1%;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+@media only screen and (max-width: 1200px) /*and (min-width: 600px)*/ {
+    .checkbtn{
+        display: block;
+    }
+    .Main-nav-list{
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #fff;
+        top: 80px;
+        right:-100%;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+        transition: ease-in .5s ;
+
+    }
+    .Main-nav-list li{
+        display: block;
+        border-bottom: 1px solid #ddd;
+        padding: 20px;
+        padding-right: 80% ;
+    }
+    .HeaderButton-Container{
+        position: fixed;
+        top: 450px;
+        padding-right: 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: ease-in .5s ;
+        right:-100%;
+        padding: 20px;
+
+    }
+    /*
+    #check:checked ~ .Main-nav .Main-nav-list{
+        right: -20%;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+      
+    }
+    #check:checked ~ .Main-nav .Main-nav-list li{
+        
+        padding: 20px;
+       
+    }
+
+    #check:checked ~ .HeaderButton-Container{
+        right: -35%;
+        padding: 20px;
+        
+    }
+    #check:checked ~ .HeaderButton-Container button{
+        width: 50%;
+         
+    }
+    */
+    .vis1{
+        right: -20%;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+      
+    }
+   .vis12{
+        
+        padding: 20px;
+       
+    }
+
+   .vis2{
+        right: -35%;
+        padding: 20px;
+        
+    }
+    .vis22{
+        width: 50%;
+         
+    }
+   
+
+}

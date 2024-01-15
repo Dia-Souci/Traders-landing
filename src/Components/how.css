@@ -1,0 +1,152 @@
+.blue-holder{
+    background-color: #CFFAFE;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.selection{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-bar{
+    display: flex;
+    background-color: #2B2B2B;
+    width: 100%;
+    border-radius: 50px;
+    padding: 14px 32px 14px 32px;
+    gap : 10px;
+}
+
+.second-bar{
+    display: flex;
+    background-color: #2B2B2B;
+    width: 100%;
+    border-radius: 50px;
+    padding: 14px 32px 14px 32px;
+    gap:10px;
+}
+
+.phase{
+    background-color: #2B2B2B;
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px 28px;
+    border: 1px solid #fff;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.price{
+    background-color: #2B2B2B;
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px 28px;
+    border: 1px solid #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phase:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: ease-in .4s;
+    border: 1px solid #F0B519;
+}
+
+.price:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in-out .4s;
+    border: 1px solid #F0B519;
+}
+
+.selected{
+    background-color: #F0B519;
+    color: #000;
+    border: 1px solid #F0B519;
+}
+
+.buttonGroup{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 50px 0px 50px;
+    gap:10%;
+}
+.buttonGroup button{
+    width: 100%;
+    padding: 25px 0px;
+    border: none;
+    border-radius: 40px;
+}
+
+.btn-blk{
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Inter',sans-serif;
+}
+
+.btn-ylw{
+    background-color: #F0B519;
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: 'Inter',sans-serif;
+}
+
+.buttonGroup button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) /*and (min-width: 600px)*/ {
+
+    .blue-holder{
+        background-color: #fff;
+    }
+    .selection{
+        flex-direction: column;
+        align-items: center;
+    }
+    .first-bar , .second-bar{
+        width: 100%;
+    }
+    .buttonGroup{
+        flex-direction: column;
+        gap:20px;
+        align-items: center;
+    }
+    .buttonGroup button{
+        width: 70%;
+    }
+
+    @media only screen and (max-width: 600px){
+
+        .selection{
+            width: 90vw;
+        }
+
+        .price{
+            width: 20%;
+            font-size: 10px;
+            padding: 3px 5px;
+        }
+        .phase{
+            font-size: 15px;
+        }
+
+    }
+}
